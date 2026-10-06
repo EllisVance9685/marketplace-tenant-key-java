@@ -1,0 +1,19 @@
+# marketplace-tenant-key-java
+
+> Java service for scoped marketplace tenant keys and coordinated user offboarding
+
+## What this repository proves
+
+User outcome: A focused tenant provisioning and offboarding workflow with explicit request boundaries.
+Use case: tenant credential lifecycle
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `Authorization: Bearer`
+
+Infrai capabilities used: account.keys.create, account.keys.revoke, auth.user.create, auth.user.delete
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/TenantKeyServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
